@@ -1,0 +1,48 @@
+{
+    "base": [
+        "shao_kahn",
+        "frost",
+        "johnny_cage",
+        "sonya_blade",
+        "cassie_cage",
+        "jax_briggs",
+        "scorpion",
+        "noob_saibot",
+        "baraka",
+        "raiden",
+        "jacqui_briggs",
+        "sub_zero",
+        "kano",
+        "kabal",
+        "liu_kang",
+        "kitana",
+        "kung_lao",
+        "jade",
+        "skarlet",
+        "erron_black",
+        "d_vorah",
+        "kotal_kahn",
+        "geras",
+        "kollector",
+        "cetrion"
+    ],
+    "aftermath": [
+        "robocop",
+        "sheeva",
+        "fujin"
+    ],
+    "pack_1": [
+        "shang_tsung",
+        "nightwolf",
+        "the_joker",
+        "spawn",
+        "terminator_t800",
+        "sindel"
+    ],
+    "pack_2": [
+        "rambo",
+        "mileena",
+        "rain",
+        "the_predator"
+    ]
+}

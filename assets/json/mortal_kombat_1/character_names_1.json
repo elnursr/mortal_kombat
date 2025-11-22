@@ -1,0 +1,45 @@
+{
+    "base": [
+        "reiko",
+        "nitara",
+        "general_shao",
+        "sindel",
+        "ashrah",
+        "havik",
+        "reptile",
+        "geras",
+        "tanya",
+        "baraka",
+        "li_mei",
+        "smoke",
+        "rain",
+        "raiden",
+        "mileena",
+        "kung_lao",
+        "kenshi_takahashi",
+        "johnny_cage",
+        "kitana",
+        "scorpion",
+        "sub_zero",
+        "liu_kang"
+    ],
+    "pre_order": [
+        "shang_tsung"
+    ],
+    "kombat_pack": [
+        "takeda",
+        "homelander",
+        "ermac",
+        "peacemaker",
+        "quan_chi",
+        "omni_man"
+    ],
+    "khaos_reigns_expansion": [
+        "t_1000",
+        "conan_the_barbarian",
+        "ghost_face",
+        "noob_saibot",
+        "cyrax",
+        "sektor"
+    ]
+}

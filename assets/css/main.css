@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "mortal_kombat_1";
+  src: url("../vendors/fonts/mortal_kombat_1/mortal_kombat_1.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto Condensed";
+}
+
+::-moz-selection {
+  color: white;
+  background-color: black;
+}
+
+::selection {
+  color: white;
+  background-color: black;
+}
+
+.mortal-kombat-modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 17px;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  opacity: 0;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  -webkit-transition: 0.3s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+  transition: 0.3s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.mortal-kombat-modal.active {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+  transition: 0.3s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+}
+.mortal-kombat-modal__character_body {
+  width: 455px;
+  height: 675px;
+}
+.mortal-kombat-modal__character_body img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.mortal-kombat-modal__character_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.9em;
+  width: 35%;
+}
+.mortal-kombat-modal__character_purpose {
+  text-transform: uppercase;
+  letter-spacing: 0.45em;
+  font-weight: 555;
+  color: #b10101;
+}
+.mortal-kombat-modal__character_name {
+  text-transform: uppercase;
+  font-size: 3.7em;
+  letter-spacing: 2.7px;
+}
+.mortal-kombat-modal__character_title {
+  text-transform: capitalize;
+  font-size: 1.7em;
+}
+.mortal-kombat-modal__character_description {
+  text-align: justify;
+  letter-spacing: 0.9px;
+  font-weight: 455;
+  line-height: 23px;
+}
+.mortal-kombat-modal__close {
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+.mortal-kombat-roster {
+  position: relative;
+  background-image: url("../media/jpg/background/main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 3em 0;
+}
+.mortal-kombat-roster__heading {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.3em;
+  letter-spacing: 1.5px;
+  padding: 17px 9px;
+}
+.mortal-kombat-roster__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1601px;
+  margin: 0 auto;
+}
+.mortal-kombat-roster__item {
+  pointer-events: none;
+  overflow: hidden;
+  margin: 5px;
+  opacity: 0.5;
+  border-radius: 5px;
+  -webkit-transform: scale3d(0.95, 0.95, 1);
+          transform: scale3d(0.95, 0.95, 1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.mortal-kombat-roster__item.active {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+.mortal-kombat-roster__character {
+  cursor: pointer;
+  position: relative;
+  width: 145px;
+  height: 195px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b1bfd7), to(#777777));
+  background-image: linear-gradient(180deg, #b1bfd7, #777777);
+}
+.mortal-kombat-roster__character:hover .mortal-kombat-roster__character_image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.mortal-kombat-roster__character:hover .mortal-kombat-roster__character_smoke_image {
+  opacity: 0;
+}
+.mortal-kombat-roster__character:hover .mortal-kombat-roster__character_smoke_video {
+  opacity: 0.9;
+}
+.mortal-kombat-roster__character:hover .mortal-kombat-roster__character_name {
+  bottom: 7%;
+}
+.mortal-kombat-roster__character:hover .mortal-kombat-roster__character_name::before {
+  left: -12%;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.mortal-kombat-roster__character:hover .mortal-kombat-roster__character_name::after {
+  right: -12%;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.mortal-kombat-roster__character_image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  border-radius: 5px;
+  will-change: transform;
+}
+.mortal-kombat-roster__character_name, .mortal-kombat-roster__character_smoke_image, .mortal-kombat-roster__character_smoke_video {
+  position: absolute;
+}
+.mortal-kombat-roster__character_name {
+  left: 50%;
+  bottom: -15%;
+  width: 73%;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.61em;
+  z-index: 7;
+  white-space: nowrap;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s;
+  color: white;
+  background-color: #353535;
+}
+.mortal-kombat-roster__character_name::before, .mortal-kombat-roster__character_name::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 12%;
+  height: 100%;
+  -webkit-transition: left 0.3s, right 0.3s;
+  transition: left 0.3s, right 0.3s;
+  background-color: #353535;
+}
+.mortal-kombat-roster__character_name::before {
+  left: -100%;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+.mortal-kombat-roster__character_name::after {
+  right: -100%;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+          clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+.mortal-kombat-roster__character_smoke_image {
+  will-change: opacity;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.mortal-kombat-roster__character_smoke_video {
+  mix-blend-mode: screen;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.mortal-kombat-roster_filter_tab_menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding: 12px 0;
+}
+.mortal-kombat-roster_filter_tab_menu__item {
+  -webkit-transform: skew(-21deg);
+          transform: skew(-21deg);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  background-color: white;
+}
+.mortal-kombat-roster_filter_tab_menu__item.active {
+  background-color: #272727;
+}
+.mortal-kombat-roster_filter_tab_menu__item.active:hover {
+  background-color: #272727;
+}
+.mortal-kombat-roster_filter_tab_menu__item.active .mortal-kombat-roster_filter_tab_menu__title {
+  color: white;
+}
+.mortal-kombat-roster_filter_tab_menu__item:hover {
+  background-color: #b10101;
+}
+.mortal-kombat-roster_filter_tab_menu__item:hover .mortal-kombat-roster_filter_tab_menu__title {
+  color: white;
+}
+.mortal-kombat-roster_filter_tab_menu__item:hover .mortal-kombat-roster__character_smoke_video {
+  opacity: 0.9;
+}
+.mortal-kombat-roster_filter_tab_menu__title {
+  position: relative;
+  cursor: pointer;
+  padding: 12px 35px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 655;
+  letter-spacing: 1.7px;
+  z-index: 3;
+  -webkit-transform: skew(21deg);
+          transform: skew(21deg);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  text-shadow: 0 0 5px white;
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */

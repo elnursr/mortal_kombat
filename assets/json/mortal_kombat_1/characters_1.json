@@ -1,0 +1,220 @@
+{
+    "base": [
+        {
+            "name": "reiko",
+            "purpose": "fealty",
+            "title": "general_shao's_loyal_lieutenant",
+            "description": "Reiko was a boy when he and his family were captured during the Kafallah War. Though his family died, Reiko fought and survived. <br/> <br/> After spending months as a prisoner, Reiko was freed during a raid by General Shao. Despite his youth and small size, Reiko attacked his former captors and exacted bloody revenge. <br/> <br/> Impressed by the boy’s spirit, General Shao made Reiko his squire. Under his tutelage, Reiko learned the ways of war. He became an exceptional soldier and is now the General’s second-in-command. <br/> <br/> Reiko’s loyalty to General Shao is absolute. He will live and die by his orders."
+        },
+        {
+            "name": "nitara",
+            "purpose": "deliverance",
+            "title": "heroine_of_vaeternus",
+            "description": "Nitara’s race of vampires hails from the dark and desolate realm of Vaeternus. To survive, they evolved the ability to feed on the blood of other creatures. <br/> <br/> The Vaeternians thrived, building a great society. But as their comfort grew, so did their shortsightedness. They overfed on Vaeternus’ creatures, disrupting the natural order. They now starve as it collapses. <br/> <br/> It is Nitara's solemn obligation to deliver her people from hunger and save her race. Vaeternus must survive."
+        },
+        {
+            "name": "general_shao",
+            "purpose": "dominance",
+            "title": "supreme_commander_of_outworld's_army",
+            "description": "Born into a proud military family, Shao was expected to become a soldier. But he was a sickly child who, though brilliant and eager, had an infirm body. <br/> <br/> Shao’s disability infuriated his father. He dismissed his son’s physicians and designed an extreme program to build his son’s strength and endurance. <br/> <br/> Years of toil molded Shao into a physical colossus and forged within him an iron will. And as his father had promised, Shao became the perfect soldier. His brilliant tactics and relentless effort won Outworld many victories and him much fame. <br/>  <br/> Though General Shao is sworn to serve the Empress, his loyalty is to with Outworld. If Sindel’s rule ever endangers Outworld, he will be the first to try to end it."
+        },
+        {
+            "name": "sindel",
+            "purpose": "stability",
+            "title": "empress_of_outworld",
+            "description": "When Sindel ascended to Outworld's throne, she worried that she was ill-prepared. Adding to her stress: her impending arranged marriage to Jerrod, an Outworld noble. Forced into it to placate a rebellious region, Sindel could only pray that he was worthy. <br/> <br/> To Sindel’s delight, Jerrod proved an ideal partner. Her early reign marked the start of a new Golden Age. Sindel then welcomed her beautiful twin daughters, Mileena and Kitana. She thanked the Gods for her charmed life. <br/> <br/> But Sindel had counted her blessings too quickly. When Jerrod was murdered, Sindel’s heart was broken. Smelling weakness, factions formed to challenge her rule. <br/> <br/> As her enemies conspire, Sindel fights to protect her family and her empire. She will do whatever it takes to defend her daughters’ birthright."
+        },
+        {
+            "name": "ashrah",
+            "purpose": "absolution",
+            "title": "repentant_nether_realm_demon",
+            "description": "As a demon, all Ashrah knew was pain and violence. She assumed all beings, in all realms, lived as she did. <br/> <br/> But once she journeyed outside of the NetherRealm, she realized her error. Other realms were places of beauty and peace. She could not aid in their defilement. <br/> <br/> Ashrah fled from her sister demons. Along the way, she found an enchanted kriss. It was a demon slayer, which she used to finish her pursuers. <br/> <br/> She was stunned to discover that using the kriss to destroy evil was purifying her soul. And that if she continued to do so, she could free herself from the NetherRealm. <br/> <br/> Ashrah senses that her final absolution is near. Once achieved, she will finally enter the light."
+        },
+        {
+            "name": "havik",
+            "purpose": "liberation",
+            "title": "rebellious_anarchist",
+            "description": "A citizen of the realm of Seido, Havik is sworn to take down its oppressive regime and free his people. There, order is prized above all else. Lawbreaking is met with strict punishment. Its citizens live in strictly regulated castes. <br/> <br/> As a member of Seido’s lowest caste, Havik had neither rights nor privileges. He seethed with anger at the injustice. When he is brutally punished for a minor crime, Havik finally decides to act. He sets out to destroy Seido’s regime and replace it with an anarchist utopia. <br/> <br/> Once he breaks Seido’s social order, Havik will free its citizens. Together, they will live in blessed anarchy."
+        },
+        {
+            "name": "reptile",
+            "purpose": "freedom",
+            "title": "zaterran_slave",
+            "description": "Reptile is Zaterran, one of the reptiloid race which lives on Outworld’s fringes. <br/> <br/> Like other reptiles, Zaterrans can camouflage themselves. But Reptile possesses a unique mutation: one which allows him to shift shape to appear human. <br/> <br/> Bullied mercilessly by Zaterrans for this ability, Reptile left home to make his future elsewhere."
+        },
+        {
+            "name": "geras",
+            "purpose": "service",
+            "title": "sentinel_of_the_hourglass",
+            "description": "Reconstructed by Liu Kang at the dawn of his New Era, Geras remains eternal and unkillable. He retains the memories of all the innumerable timelines he has watched pass and fade. <br/> <br/> In this New Era, Geras monitors events to make sure that they are faithful to Liu Kang’s vision. When they deviate from their intended path, it is Geras’s responsibility to correct them. <br/> <br/> As threats begin to mount, Geras works tirelessly to defend reality. But to succeed, he must first identify the mastermind behind the plot to destroy Liu Kang’s New Era."
+        },
+        {
+            "name": "tanya",
+            "purpose": "protection",
+            "title": "guardian_of_outworld's_royal_family",
+            "description": "Chosen as an infant from Outworld’s first-born daughters, Tanya was raised by the Umgadi’s priestesses. She’s never known her birth family. <br/> <br/> As she grew older and saw other initiates wash out, Tanya feared that she would share their fate. But that fear spurred success; after many attempts, Tanya passed her trials and became a full Umgadi. <br/> <br/> Over time, Tanya became one of the order’s most trusted members. She was the obvious choice when it needed to choose a new leader for the royal family’s personal guard. <br/> <br/> As an Umgadi, Tanya is sworn to piety and chastity. That is why her bond with Princess Mileena, were it known, would cause a scandal. By following her heart, Tanya risks not only her position but also her life."
+        },
+        {
+            "name": "baraka",
+            "purpose": "preservation",
+            "title": "defender_of_the_tarkatans",
+            "description": "Baraka was once a respected Outworld merchant. But that life ended in an instant when he contracted the dreaded Tarkat plague. <br/> <br/> Incurable, contagious, and the cause of severe physical deformities, Tarkat turned Baraka into a monster. He was cast out and doomed to live out his days in a colony of similarly afflicted Outworlders. <br/> <br/> When Baraka first arrived, the colony was in disarray. His fellow Tarkatans had given up and were ready to die. <br/> <br/> Their hopelessness lit a fire in Baraka’s heart. He spares no effort to better his fellow Tarkatans’ lives. He knows that as long as he fights, he will never truly be a victim."
+        },
+        {
+            "name": "li_mei",
+            "purpose": "redemption",
+            "title": "first_constable_of_sun_do",
+            "description": "As her parents’ firstborn daughter, Li Mei was claimed by the Umgadi, the warrior priestesses who guard Outworld’s royal family. <br/> <br/> Li Mei’s service began with high expectations. Her early success caught the eye of the Royal family. <br/> <br/> But it all fell apart when a terrible tragedy unfolded. Li Mei was blamed for this and In the aftermath, she did the unthinkable: she quit the Umgadi. <br/> <br/> Friendless and alone, Li Mei needed a new purpose. She joined Sun Do’s constables, the Outworld capital’s rough and tumble police force. Over time, she became their First Constable. <br/> <br/> Li Mei is glad to be the capital guardian. Still, she hopes one day to redeem herself."
+        },
+        {
+            "name": "smoke",
+            "purpose": "loyalty",
+            "title": "master_of_stealth",
+            "description": "As a boy, Smoke lived to hunt with his family. Their final hunt, however, ended in tragedy. Having accidentally trespassed onto Lin Kuei lands, they were attacked. Smoke was orphaned. <br/> <br/> Ashamed by his warriors' actions, the Lin Kuei's Grandmaster adopted Smoke. He raised him alongside his sons, Sub-Zero and Scorpion. <br/> <br/> Eventually, Smoke chose to make the Lin Kuei’s mission his own. But as he lacked his brothers' innate supernatural abilities, he set out to master practical magic. Having done so. he now joins them in Earthrealm's defense."
+        },
+        {
+            "name": "rain",
+            "purpose": "ambition",
+            "title": "high_mage_of_outworld",
+            "description": "As a student at Outworld’s exclusive Imperial Academy of Sorcery, Rain amazed his peers with his singular aptitude for water magic. Having honed his craft of water magic into a fierce weapon, he now hopes to learn the realms’ darkest and most powerful sorcery."
+        },
+        {
+            "name": "raiden",
+            "purpose": "stability",
+            "title": "champion_of_earthrealm",
+            "description": "In the village of Fengjian, Raiden was known for his kindness and his charity. He was happy to spend his days tending to the fields, as well as to his friends and family. <br/> <br/> So when he is asked to leave Fengjian and become one of Earthrealm’s champions, Raiden hesitates. But he soon realizes that to best serve his village, he must join them. <br/> <br/> As threats to Earthrealm mount, Raiden must mature into the great warrior that Liu Kang knows he can be."
+        },
+        {
+            "name": "mileena",
+            "purpose": "respect",
+            "title": "heir_to_outworld's_throne",
+            "description": "Born mere seconds ahead of her twin sister, Mileena is the rightful heir to Outworld’s throne. But even so, there are those who distrust Mileena’s impulsiveness. They whisper that Kitana, with her steadier hand, should replace Mileena as heir to the throne. <br/> <br/> As Mileena fights for legitimacy, she hides a horrible secret: she is infected with the dreaded and lethal Tarkat disease. Were her affliction found out, Mileena would be forced into battle to save her throne."
+        },
+        {
+            "name": "kung_lao",
+            "purpose": "prestige",
+            "title": "youthful_warrior_with_dreams_of_glory",
+            "description": "Born and raised in the village of Fengjian, Kung Lao has spent his life toiling in the fields. It has been an honorable life, if not a glorious one. <br/> <br/> Kung Lao’s greatest fear is that his life will amount to nothing. He prays fervently that he will be called to do something bigger. <br/> <br/> His prayers are answered when he is asked to join the champions of Earthrealm. As a warrior fighting for its honor, Kung Lao knows that his victories will be long remembered."
+        },
+        {
+            "name": "kenshi_takahashi",
+            "purpose": "revivial",
+            "title": "restorer_of_his_family's_name",
+            "description": "Once one of ancient Japan's most honored families, the Takahashis were decimated in battle. They lost everything, including the emblem of their power: the revered sword, Sento. Those who survived joined the Bakuto, a predecessor of the Yakuza, for its protection. <br/> <br/> Five centuries later, Kenshi is raised on the stories of his ancient family's exploits. Detesting his corrupt Yakuza life, he pines to free the Takahashis from the Yakuza's grasp and restore their name. <br/> <br/> But for his family to follow him, Kenshi must first fight to prove that he can lead. His first battle is to find and retrieve Sento."
+        },
+        {
+            "name": "johnny_cage",
+            "purpose": "vanity",
+            "title": "21st_century_action_hero",
+            "description": "Like many stars before him, Johnny became addicted to his fame. He came to measure his self-worth by his fans' adoration and their praise of him on social media. <br/> <br/> But with his star now fading, Johnny is fighting an uphill battle to remain relevant. He joins Liu Kang’s Earthrealm champions hoping that it will provide his career and his fame a desperately needed boost."
+        },
+        {
+            "name": "kitana",
+            "purpose": "duty",
+            "title": "princess_of_outworld",
+            "description": "Kitana has one purpose in life: to aid and protect her older sister, Mileena, as she prepares to rule Outworld one day. <br/> <br/> The steady-handed Kitana ignores the calls of those who advocate that she should replace her impulsive sister as heir. Instead, Kitana will defend the realm by fighting to make Mileena the best Empress possible. She will also fight to hide the dark secret that could end her sister's reign before it begins."
+        },
+        {
+            "name": "scorpion",
+            "purpose": "honor",
+            "title": "revered_lin_kuei_warrior",
+            "description": "Like his cherished father, Scorpion is dedicated to the Lin Kuei and its defense of Earthrealm. When his father died, Scorpion was bereft. Though he took pride in knowing that his brother, Sub-Zero, would succeed their father as the Lin Kuei's Grandmaster. <br/> <br/> But Sub-Zero's unprecedented moves to cast off the Lin Kuei's traditional duties have frozen Scorpion’s enthusiasm. He fears that he may one day have to battle his brother for control of the Lin Kuei's legacy."
+        },
+        {
+            "name": "sub_zero",
+            "purpose": "power",
+            "title": "grandmaster_of_the_lin_kuei",
+            "description": "As the Lin Kuei's Grandmaster, Sub-Zero leads his ancient warrior clan in the defense of Earthrealm from external threats. For centuries, it has been their solemn task. <br/> <br/> But Earthrealm hasn’t been threatened in generations, and Sub-Zero sees no point in limiting his clan to preparing for dangers that may never come. Under his leadership, the Lin Kuei will come out of the shadows and fight for its place as one of Earthrealm’s great nations."
+        },
+        {
+            "name": "liu_kang",
+            "purpose": "security",
+            "title": "god_of_fire",
+            "description": "Having won control of the Hourglass, Liu Kang restarted history. He neutralized the threats and dangers that had come before, crafting a New Era in which all beings would have the opportunity to find peace. <br/> <br/> But that peace is now threatened by an enemy that Liu Kang could never have anticipated. It will take all of his wisdom and experience to save not only Earthrealm, but all of reality."
+        }
+    ],
+    "pre_order": [
+        {
+            "name": "shang_tsung",
+            "purpose": "influence",
+            "title": "scheming_sorcerer",
+            "description": "Shang Tsung grew up in Outworld’s backwaters. Too lazy for hard labor and too shifty for honest work, he eked out a living selling quack cures and fake magic. Though his wares were useless, Shang Tsung’s easy charm always closed the deal. <br/> <br/> Shang Tsung was resigned to this hardscrabble life. But then one day a mysterious stranger came, promising to make Shang Tsung a powerful sorcerer. Though suspicious of the offer, it was one he couldn’t refuse."
+        }
+    ],
+    "kombat_pack": [
+        {
+            "name": "takeda",
+            "purpose": "retribution",
+            "title": "enemy_of_the_underworld",
+            "description": "Like his cousin Kenshi, Takeda was raised a Yakuza. Unlike him, Takeda enjoyed this lifestyle. That's why he was chosen to end Kenshi’s crusade against his masters. <br/> <br/> The fight mortally wounded Takeda. Unwilling to let his cousin die, Kenshi rushed him to the nearest help: the Shirai Ryu. <br/> <br/> Even after Takeda was healed, Kenshi wouldn't release him. He feared that the Yakuza might kill him for failing his mission. Takeda resisted, attempting escape repeatedly. <br/> <br/> But as the months passed, he began to appreciate the Shirai Ryu’s selfless commitment to Earthrealm, and the contrast to his past lifestyle. <br/> <br/> Inspired by the Shirai Ryu, Takeda swore to rip up Earthrealm's underworld by the roots. But he soon learns they are stronger and more tangled than he ever thought possible."
+        },
+        {
+            "name": "homelander",
+            "purpose": "power",
+            "title": "the_world's_greatest_superhero",
+            "description": "Homelander is the most powerful being on the planet and the leader of The Seven, the elite superhero team owned and managed by Vought International. In a world where “Supes” are made, he's the strongest of them all. He can fly, has super strength, and can laser enemies with his eyes. Homelander presents himself as the ultimate patriot and protector, but don't let his movie star good looks or high approval rating fool you. He is a murderous, narcissistic sociopath with an insatiable need for validation, love, and power. <br/> <br/> Homelander's destruction of enemies and lust for power does not end with his world. Challengers from other realms will face his wrath."
+        },
+        {
+            "name": "ermac",
+            "purpose": "his_future",
+            "title": "collection_of_souls",
+            "description": "Ermac is a collection of souls, bound together by Quan Chi's dark magic. The souls within him were intended to function as a group mind. That part of the spell is temporarily undone, however, when Ermac is defeated by Mileena. During that period, one of the souls in Ermac's collection takes control of his group mind. It is that of Emperor Jerrod, deceased ruler of Outworld and husband of Empress Sindel. He rejoins the royal family, aiding Empress Mileena's reign. But when Ermac's collection of souls reestablishes its control, Ermac retreats to Outworld's shadows. No longer Quan Chi's slave, nor bound to the royal family, he must find a future worth fighting for."
+        },
+        {
+            "name": "peacemaker",
+            "purpose": "peace",
+            "title": "extreme_patriot",
+            "description": "Christopher Smith, the Peacemaker, cherishes peace with all his heart. So much so, that he will kill anyone and everyone necessary to get it. That is why he molded himself into an unstoppable soldier. Peacemaker believes himself as the greatest expert in weapons and warfare. <br/> <br/> But Peacemaker's heroism masks a troubled soul. Raised by an abusive father, Peacemaker is an extreme loner. Only recently, as a member of the secret team assembled by A.R.G.U.S. for “Project Butterfly”, has he learned to trust and rely on others. They became the family he never had. <br/> <br/> Now thrust into the Mortal Kombat universe, Peacemaker has vowed to bring peace to the realms. He won't stop until he finishes the mission."
+        },
+        {
+            "name": "quan_chi",
+            "purpose": "supremacy",
+            "title": "netherrealm_necromancer",
+            "description": "Quan Chi was born into hard labor in an Outworld mine. He had no future, just the guarantee of certain death in its dark tunnels. <br/> <br/> To curry favor with the mine’s owner, Quan Chi informed on fellow workers who were planning a strike. It was broken and many strikers killed. The survivors were not going to forgive and forget. They plotted to kill Quan Chi. <br/> <br/> Quan Chi’s life was saved by a mysterious benefactor. In exchange for his service, she offered to free him from the mines and train him in dark magic. Quan Chi eagerly accepted. <br/> <br/> Now a master of the Netherrealm's most vile sorcery, Quan Chi plots with Shang Tsung to conquer the realms. He will not be denied."
+        },
+        {
+            "name": "omni_man",
+            "purpose": "conquest",
+            "title": "viltrumite_warrior",
+            "description": "Viltrumite warrior Nolan Grayson, better known as the superhero Omni-Man, long fought to protect his adopted home as one of Earth’s most powerful champions. He even raised his son, the hero known as Invincible, to follow in his footsteps and carry on his legacy. <br/> <br/> But Omni-Man’s true mission was never benevolence— it was conquest. And the Viltrum Empire, hungry for expansion, has no intention of stopping at Earthrealm."
+        }
+    ],
+    "khaos_reigns_expansion": [
+        {
+            "name": "t_1000",
+            "purpose": "supremacy_of_machines",
+            "title": "mimetic_polyalloy_assassin",
+            "description": "It was sent into the past with a clear mission: To ensure the supremacy of machines over humanity and to eliminate John Connor, the future leader of the human resistance. <br/> <br/> The liquid metal machine can imitate any object with an identical mass ratio without the need for complex moving parts. The virtually indestructible T-1000 can shapeshift into other people, perfectly mimicking their appearance, behavior, and voice, making it an extremely difficult opponent to detect and defeat. It also has the ability to transform into objects by converting parts of itself into formidable weapons, such as creating a deadly blade from an arm, and regenerate itself after sustaining physical damage. <br/> <br/> With its advanced intelligence and metamorphosis capabilities, the T-1000 embodies the ultimate evolution of assassination technology."
+        },
+        {
+            "name": "conan_the_barbarian",
+            "purpose": "adventure",
+            "title": "mightly_cimmerian_warrior",
+            "description": "Born on a battlefield, Conan the barbarian was destined to tread the jeweled thrones of the Earth under his feet. <br/> <br/> His village destroyed and parents slain by the malevolent warlord Thulsa Doom, Conan is sold into slavery. In captivity, Conan grows into one of the most formidable warriors the world has ever seen through relentless toil and combat. Upon being freed by his master, Conan embarks on a quest for vengeance, his journey culminating in the defeat of Doom, liberating thousands from his sorcerous grip. Now, Conan stands ready to defend Earthrealm against the vile beings that mean to conquer it."
+        },
+        {
+            "name": "ghost_face",
+            "purpose": "deranged_amusement",
+            "title": "the_terror_of_woodsboro",
+            "description": "The many killers who have worn the Ghost Face mask all share a horrifying trait: they take perverse joy in inflicting pain and taking lives. Armed with a menacing knife, an encyclopedic knowledge of horror films, and a psychopathic compulsion to torture, Ghost Face has become an infamous symbol of terror. No sooner did Ghost Face arrive in the New Era, then dead bodies began to pile up. Panic has seized the realms as its citizens fear for who might be this serial killer’s next victim."
+        },
+        {
+            "name": "noob_saibot",
+            "purpose": "revolt",
+            "title": "bi_han_perfected",
+            "description": "As Sub-Zero, Bi-Han was the Lin Kuei’s ruthless Grandmaster. He dreamed of making his clan a dominant force in Earthrealm. <br/> <br/> But Bi-Han and his dreams died at the hands of a godly Havik from another timeline. This Havik stole Bi-Han’s soul, using it to create the perfect henchman: Noob Saibot. <br/> <br/> Like his creator, Noob Saibot is dedicated to fomenting anarchy. He will not rest until all forms of authority are eradicated"
+        },
+        {
+            "name": "cyrax",
+            "purpose": "free_will",
+            "title": "free_thinking_lin_kuei",
+            "description": "Cyrax was born into the Zaki, one of the Lin Kuei's many sub-clans. For generations it has maintained a quiet presence in Niger’s Aïr mountains, where it stands ready to defend Earthrealm. <br/> <br/> A martial arts prodigy, Cyrax was the youngest Zaki to ever become an active Lin Kuei warrior. That success earned her an invitation to serve directly under Sektor. <br/> <br/> Cyrax seized the opportunity with her trademark vigor. But while her skills have endeared her Sektor, her independent streak has not. <br/> <br/> Despite Sektor’s best efforts to break it, Cyrax’s will remains untamed. She will serve the Lin Kuei on her terms, or not at all."
+        },
+        {
+            "name": "sektor",
+            "purpose": "perfection",
+            "title": "master_armorer_of_the_lin_kuei",
+            "description": "Sektor grew up immersed in Lin Kuei culture. Her mother was a leading warrior, her father was its Master Armorer. <br/> <br/> Sektor marveled at his flawless work. Apprenticing with him, she eventually surpassed her father's skills. When he retired, she took his place. <br/> <br/> But Sektor also wanted to honor her mother’s legacy. Now her vast knowledge of weaponry and her formidable martial skills make Sektor a kombatant like no other. <br/> <br/> Sensing Sektor was a kindred spirit, Sub-Zero shared with her his grand vision for the Lin Kuei's future. She joined his efforts immediately. <br/> <br/> Now Sub-Zero’s most trusted lieutenant, Sektor will force the Lin Kuei to evolve. Those who cannot change will be eliminated."
+        }
+    ]
+}
