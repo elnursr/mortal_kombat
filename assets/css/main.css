@@ -58,7 +58,7 @@
   transition: 0.3s cubic-bezier(0.17, 0.89, 0.32, 1.28);
 }
 .mortal-kombat-modal__character_body {
-  width: 455px;
+  width: 41%;
   height: 675px;
 }
 .mortal-kombat-modal__character_body img {
@@ -323,4 +323,3 @@
   text-shadow: 0 0 5px white;
   color: black;
 }
-/*# sourceMappingURL=main.css.map */

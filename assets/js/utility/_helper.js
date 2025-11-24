@@ -4,15 +4,15 @@ export function removeClasses({ elements, className = 'active' }) {
     }
 }
 
-export function setFlexOrders(elements) {
+export function setFlexOrders({ elements, firstOrder, secondOrder }) {
     for (let i = 0; i < elements.length; i++) {
         let flexOrder = i + 1;
         elements[i].style.order = flexOrder;
-        if (flexOrder === 13) {
-            elements[i].style.order = 14;
+        if (flexOrder === firstOrder) {
+            elements[i].style.order = secondOrder;
         }
-        else if (flexOrder === 14) {
-            elements[i].style.order = 13;
+        else if (flexOrder === secondOrder) {
+            elements[i].style.order = firstOrder;
         }
     }
 }

@@ -1,4 +1,3 @@
-
 // dom imports
 import { mortalKombat1RosterItems, mortalKombat11RosterItems, mortalKombat1FilterTabMenu, mortalKombat11FilterTabMenu } from './ui/_dom_selectors.js';
 
@@ -15,21 +14,25 @@ import { getDataFetch } from './services/_data_service.js';
 import { MortalKombat } from './mortal_kombat/_mortal_kombat.js';
 
 let mortalKombat1 = new MortalKombat({
-    extensionType: 'webp',
-    defaultTabMenuTitle: 'definitive_edition',
+    pathWithExtensionType: 'webp',
+    overlayVideo: 'snow',
     rosterItemClassName: 'mortal-kombat-1__roster_item',
     characterClassName: 'mortal-kombat-1__character',
     filterTabMenuItemClassName: 'mortal_kombat_1_filter_tab_menu__item',
-    defaultMediaPath: `${baseLocalMediaUrl}/webp`
+    defaultTabMenuTitle: 'definitive_edition',
+    defaultMediaPath: `${baseLocalMediaUrl}`,
+    overlayImage: `${baseLocalMediaUrl}/webp/roster_smoke_overlay.webp`
 });
 
 let mortalKombat11 = new MortalKombat({
-    extensionType: 'png',
-    defaultTabMenuTitle: 'ultimate',
+    pathWithExtensionType: 'png',
+    overlayVideo: 'snow',
     rosterItemClassName: 'mortal-kombat-11__roster_item',
     characterClassName: 'mortal-kombat-11__character',
     filterTabMenuItemClassName: 'mortal_kombat_11_filter_tab_menu__item',
-    defaultMediaPath: `${baseLocalMediaUrl}/png`
+    defaultTabMenuTitle: 'ultimate',
+    defaultMediaPath: `${baseLocalMediaUrl}`,
+    overlayImage: `${baseLocalMediaUrl}/webp/roster_smoke_overlay.webp`
 });
 
 getDataFetch(mortalKombat1CharacterNameUrls)

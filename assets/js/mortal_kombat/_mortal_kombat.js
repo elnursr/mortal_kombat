@@ -1,19 +1,37 @@
 import { specialNames } from '../data/_data.js';
 
-import { removeClasses } from '../utility/_helper.js';
+import { Audio } from '../utility/_audio.js';
 
 import { mortalKombatModal } from '../ui/_dom_selectors.js';
 
-export function MortalKombat(config) {
-    this.formattedName = '';
-    this.extensionType = config.extensionType;
-    this.rosterItemClassName = config.rosterItemClassName;
-    this.characterClassName = config.characterClassName;
-    this.filterTabMenuItemClassName = config.filterTabMenuItemClassName;
-    this.defaultMediaPath = config.defaultMediaPath;
-    this.defaultTabMenuTitle = config.defaultTabMenuTitle;
-    this.overlayVideo = config.overlayVideo || 'roster_smoke';
-    this.overlayImage = config.overlayImage || `${this.defaultMediaPath}/roster_smoke_overlay.${this.extensionType}`;
+import { removeClasses, setFlexOrders } from '../utility/_helper.js';
+
+let audio = new Audio({
+    element: document.querySelector('.mortal-kombat-audio-services__character_announcer')
+});
+
+export function MortalKombat({
+    formattedName = '',
+    pathWithExtensionType = '',
+    rosterItemClassName = '',
+    characterClassName = '',
+    filterTabMenuItemClassName = '',
+    defaultMediaPath = '',
+    defaultTabMenuTitle = '',
+    audioPath = '',
+    overlayImage = '',
+    overlayVideo = ''
+} = {}) {
+    this.formattedName = formattedName;
+    this.pathWithExtensionType = pathWithExtensionType;
+    this.rosterItemClassName = rosterItemClassName;
+    this.characterClassName = characterClassName;
+    this.filterTabMenuItemClassName = filterTabMenuItemClassName;
+    this.defaultMediaPath = defaultMediaPath;
+    this.defaultTabMenuTitle = defaultTabMenuTitle;
+    this.audioPath = audioPath,
+        this.overlayImage = overlayImage;
+    this.overlayVideo = overlayVideo;
 };
 
 MortalKombat.prototype.charactersToUI = function ({ characters, filterTitle, rosterItems }) {
@@ -30,13 +48,12 @@ MortalKombat.prototype.charactersToUI = function ({ characters, filterTitle, ros
                 `
                     <li class="mortal-kombat-roster__item active ${this.rosterItemClassName}" data-filter-title="${filterTitle[i]}">
                         <figure class="mortal-kombat-roster__character ${this.characterClassName}" data-video="${this.overlayVideo}">
-                            <img class="mortal-kombat-roster__character_image" src="${this.defaultMediaPath}/thumb/${filterTitle[i]}/${name}.${this.extensionType}" alt="${this.formattedName}">
+                            <img class="mortal-kombat-roster__character_image" src="${this.defaultMediaPath}/${this.pathWithExtensionType}/thumb/${filterTitle[i]}/${name}.${this.pathWithExtensionType}" alt="${this.formattedName}">
                             <img class="mortal-kombat-roster__character_smoke_image" src="${this.overlayImage}" alt="roster_smoke_overlay">
                             <figcaption class="mortal-kombat-roster__character_name">${this.formattedName}</figcaption>
                         </figure>
                     </li>
                 `;
-
         }
     }
 
@@ -44,6 +61,12 @@ MortalKombat.prototype.charactersToUI = function ({ characters, filterTitle, ros
         elements: document.querySelectorAll(`.${this.characterClassName}`),
         className: 'mortal-kombat-roster__character_smoke_video'
     });
+
+    setFlexOrders({
+        elements: document.querySelectorAll('.mortal-kombat-1__roster_item'),
+        firstOrder: 13,
+        secondOrder: 14
+    })
 };
 
 MortalKombat.prototype.modalToUI = function ({ characters, elements, className = 'active' }) {
@@ -55,15 +78,19 @@ MortalKombat.prototype.modalToUI = function ({ characters, elements, className =
     for (let i = 0; i < elements.length; i++) {
         elements[i].addEventListener('click', function (e) {
             e.preventDefault();
+
             let { name, purpose, title, description } = data[i];
             let filterTitle = elements[i].dataset.filterTitle;
+
+            audio.setSource(`${this.defaultMediaPath}/mp3/mk_11/${name}.mp3`);
+            audio.playSound();
 
             this.formatName(name);
 
             mortalKombatModal.innerHTML =
                 `
                     <div class="mortal-kombat-modal__character_body">
-                        <img src="${this.defaultMediaPath}/body/${filterTitle}/${name}.${this.extensionType}" alt="${name}">
+                        <img src="${this.defaultMediaPath}/${this.pathWithExtensionType}/body/${filterTitle}/${name}.${this.pathWithExtensionType}" alt="${name}">
                     </div>
                     <div class="mortal-kombat-modal__character_content">
                         <h3 class="mortal-kombat-modal__character_purpose">${purpose.replace(/_/g, ' ')}</h3>
