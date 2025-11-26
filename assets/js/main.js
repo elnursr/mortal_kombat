@@ -1,21 +1,34 @@
-// dom imports
-import { mortalKombat1RosterItems, mortalKombat11RosterItems, mortalKombat1FilterTabMenu, mortalKombat11FilterTabMenu } from './ui/_dom_selectors.js';
+// audio imports
+import { Audio } from './services/_audio_service.js';
 
-// url imports
-
-import { baseLocalMediaUrl } from './config/_urls.js';
-
-import { mortalKombat1FilterTabMenuTitles, mortalKombat11FilterTabMenuTitles } from './data/_data.js';
-
-import { mortalKombat1CharacterUrls, mortalKombat1CharacterNameUrls, mortalKombat11CharacterUrls, mortalKombat11CharacterNameUrls } from './config/_urls.js';
-
+// service imports
 import { getDataFetch } from './services/_data_service.js';
 
+// mortal kombat imports
 import { MortalKombat } from './mortal_kombat/_mortal_kombat.js';
+
+// data imports
+import { mortalKombat1FilterTabMenuTitles, mortalKombat11FilterTabMenuTitles } from './data/_data.js';
+
+// dom imports
+import { mortalKombat1RosterItems, mortalKombat11RosterItems, mortalKombat1KameoRosterItems, mortalKombat1FilterTabMenu, mortalKombat11FilterTabMenu } from './ui/_dom_selectors.js';
+
+// url imports
+import { baseLocalMediaUrl, mortalKombat1CharacterUrls, mortalKombat1CharacterNameUrls, mortalKombat11CharacterUrls, mortalKombat11CharacterNameUrls, mortalKombat1KameoCharacterNameUrls } from './config/_urls.js';
+
+let mortalKombat1Audio = new Audio({
+    element: document.querySelector('.mortal-kombat-audio-services__character_announcer')
+});
+
+let mortalKombat11Audio = new Audio({
+    element: document.querySelector('.mortal-kombat-audio-services__character_announcer')
+});
 
 let mortalKombat1 = new MortalKombat({
     pathWithExtensionType: 'webp',
-    overlayVideo: 'snow',
+    audio: mortalKombat1Audio,
+    overlayVideo: 'roster_smoke',
+    kombatFolderName: 'mk_1',
     rosterItemClassName: 'mortal-kombat-1__roster_item',
     characterClassName: 'mortal-kombat-1__character',
     filterTabMenuItemClassName: 'mortal_kombat_1_filter_tab_menu__item',
@@ -24,9 +37,21 @@ let mortalKombat1 = new MortalKombat({
     overlayImage: `${baseLocalMediaUrl}/webp/roster_smoke_overlay.webp`
 });
 
+let mortalKombat1Kameo = new MortalKombat({
+    pathWithExtensionType: 'webp',
+    overlayVideo: 'roster_smoke',
+    kombatFolderName: 'mk_1',
+    rosterItemClassName: 'mortal-kombat-1-kameo__roster_item',
+    characterClassName: 'mortal-kombat-1-kameo__character',
+    defaultMediaPath: `${baseLocalMediaUrl}`,
+    overlayImage: `${baseLocalMediaUrl}/webp/roster_smoke_overlay.webp`
+});
+
 let mortalKombat11 = new MortalKombat({
     pathWithExtensionType: 'png',
-    overlayVideo: 'snow',
+    audio: mortalKombat11Audio,
+    overlayVideo: 'roster_smoke',
+    kombatFolderName: 'mk_11',
     rosterItemClassName: 'mortal-kombat-11__roster_item',
     characterClassName: 'mortal-kombat-11__character',
     filterTabMenuItemClassName: 'mortal_kombat_11_filter_tab_menu__item',
@@ -42,6 +67,17 @@ getDataFetch(mortalKombat1CharacterNameUrls)
                 rosterItems: mortalKombat1RosterItems,
                 characters: [khaos_reigns_expansion, kombat_pack, pre_order, base],
                 filterTitle: ['khaos_reigns_expansion', 'kombat_pack', 'pre_order', 'base']
+            }
+        )
+    })
+
+getDataFetch(mortalKombat1KameoCharacterNameUrls)
+    .then(({ kameo }) => {
+        mortalKombat1Kameo.charactersToUI(
+            {
+                rosterItems: mortalKombat1KameoRosterItems,
+                characters: [kameo],
+                filterTitle: ['kameo']
             }
         )
     })

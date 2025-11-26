@@ -1,16 +1,11 @@
 import { specialNames } from '../data/_data.js';
 
-import { Audio } from '../utility/_audio.js';
-
 import { mortalKombatModal } from '../ui/_dom_selectors.js';
 
 import { removeClasses, setFlexOrders } from '../utility/_helper.js';
 
-let audio = new Audio({
-    element: document.querySelector('.mortal-kombat-audio-services__character_announcer')
-});
-
 export function MortalKombat({
+    kombatFolderName = '',
     formattedName = '',
     pathWithExtensionType = '',
     rosterItemClassName = '',
@@ -18,10 +13,11 @@ export function MortalKombat({
     filterTabMenuItemClassName = '',
     defaultMediaPath = '',
     defaultTabMenuTitle = '',
-    audioPath = '',
+    audio = '',
     overlayImage = '',
     overlayVideo = ''
 } = {}) {
+    this.kombatFolderName = kombatFolderName;
     this.formattedName = formattedName;
     this.pathWithExtensionType = pathWithExtensionType;
     this.rosterItemClassName = rosterItemClassName;
@@ -29,8 +25,8 @@ export function MortalKombat({
     this.filterTabMenuItemClassName = filterTabMenuItemClassName;
     this.defaultMediaPath = defaultMediaPath;
     this.defaultTabMenuTitle = defaultTabMenuTitle;
-    this.audioPath = audioPath,
-        this.overlayImage = overlayImage;
+    this.audio = audio;
+    this.overlayImage = overlayImage;
     this.overlayVideo = overlayVideo;
 };
 
@@ -82,8 +78,9 @@ MortalKombat.prototype.modalToUI = function ({ characters, elements, className =
             let { name, purpose, title, description } = data[i];
             let filterTitle = elements[i].dataset.filterTitle;
 
-            audio.setSource(`${this.defaultMediaPath}/mp3/mk_11/${name}.mp3`);
-            audio.playSound();
+            this.audio.Announce({
+                path: `${this.defaultMediaPath}/mp3/${this.kombatFolderName}/${name}.mp3`
+            });
 
             this.formatName(name);
 
